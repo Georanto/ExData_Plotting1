@@ -14,7 +14,7 @@
   data_pro<-data[data$Date=="2007-02-01" |data$Date=="2007-02-02",]
 ##Optional: Check for missing values: anyNA(data_pro)
 
-##Determine a variable that combines the information  Date & Time in POSIXlt/POSIXt format  data_pro$datetime<-strptime(paste(as.character(data_pro$Date),as.character(data_pro$Time)), "%Y-%m-%d %H:%M:%S")
+##Determine a variable that combines the information  Date & Time in POSIXlt/POSIXt format "%Y-%m-%d %H:%M:%S"
   data_pro$datetime<-strptime(paste(as.character(data_pro$Date),as.character(data_pro$Time)), "%Y-%m-%d %H:%M:%S")
 
 #Transform the Global_active_power (class=factor) into (class=numeric)
